@@ -1,0 +1,54 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(https://media.giphy.com/media/HAan47FSOg0us/giphy.gif);
+    color: brown;
+    font-family: comic sans-serif
+}
+
+#title {
+    text-align: center;
+    font-size: 16vmin;
+}
+
+#titleSub {
+    text-align: center;
+    font-size: 5vmin;
+}
+
+#titlePic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 15px;
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.section p {
+    font-size: 8vmin;
+    text-align: justify;
+    margin: 10px;
+}
+
+.section img {
+    height:350px;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+#gameLink {
+    font-size: 10vmin;
+    margin: 40px;
+    text-align: center;
+}
+
+#gameLink a{
+    text-decoration: none;
+}
