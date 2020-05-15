@@ -1,54 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+* {
+
+  box-sizing: border-box;
+}
+
 body, html {
+    background-image: url(https://media.giphy.com/media/tHEcTLh2rA3IY/giphy.gif);
+    background-size: cover;
     margin: 0px;
     padding: 0px;
-    background-image: url(https://media.giphy.com/media/HAan47FSOg0us/giphy.gif);
-    color: brown;
-    font-family: comic sans-serif
 }
 
-#title {
-    text-align: center;
-    font-size: 16vmin;
-}
 
-#titleSub {
-    text-align: center;
-    font-size: 5vmin;
-}
 
-#titlePic {
+.bob {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+}
+
+.text {
+    display: flex;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
     align-items: center;
-    overflow: hidden;
-    margin: 15px;
+    font-size: 32px;
+    margin: 40px;
     padding: 20px;
 }
-
-.section {
+.carousel {
     display: flex;
-    flex-direction: column;
-    margin: 20px;
+    justify-content: center;
+    margin: 20 10px 20 10px;
+    padding: 0 10px 0 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.section p {
-    font-size: 8vmin;
-    text-align: justify;
-    margin: 10px;
+.carousel p {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 22px;
 }
 
-.section img {
-    height:350px;
+.carousel img {
+    height: 400px;
     width: 100%;
     object-fit: scale-down;
+    filter: contrast(120%);
 }
 
-#gameLink {
-    font-size: 10vmin;
-    margin: 40px;
-    text-align: center;
+.columnContainer {
+    display: flex;
+    justify-content: center;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+.thumbnailContainer {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
 }
 
-#gameLink a{
-    text-decoration: none;
+.blink{
+		font-family: 'Roboto Mono', monospace;
+		font-weight:bold;
+		font-style:italic;
+		font-size:100px;
+		margin-left:auto;
+		text-align:center;
+		margin-top:5px;
+		margin-right:auto;
+    color:black;
+
+                animation: blink 2s ease infinite;
+}
+@keyframes blink{
+  0%{opacity:0;}
+  50%{opacity:1;}
+  100%{opacity:0;}
+}
+figure{
+   width:100%;
+   margin: 0;
+   padding: 350px 0 0 0;
+   position: absolute;
+   left: 0;
+   bottom 0px;
+   overflow hidden;
+   background-image :url('https://media.giphy.com/media/10HTAgEA1o5A9a/giphy.gif');
+   animation: cakeanim 75s linear infinite;
+}
+
+@keyframes cakeanim{
+  0%{background-position: 0 0;}
+  100%{background-position: 2122px 0;}
 }
